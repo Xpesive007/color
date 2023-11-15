@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #all{
+            height: 200px;
+            width: 300px;
+            background-color: rgb(121, 114, 114);
+            margin-left: 40%;
+            margin-top: 20%;
+            padding: 10px;
+        }
+        #show{
+             font-size: 30px;
+             color: black;
+            margin-left: 120px;
+        }
+        #input1{
+            width: 100px;
+            height: 40px;
+            background-color: whitesmoke;
+            border: none;
+            outline: none;
+            padding-left: 10px;
+            margin-left: 90px;
+        }
+        #butt{
+            width: 130px;
+            height: 40px;
+            background-color: whitesmoke;
+            border: none;
+            margin-left: 80px;
+
+        }
+    </style>
+</head>
+<body>
+    <main id="all">
+        <input id="input1" type="text"><br><br>
+        <button id="butt" onclick="display()">Enter</button><br><br>
+        <h1 id="show"></h1>
+    </main>
+</body>
+</html>
+
+
+<script>
+
+  function display() {
+      let input1 = document.getElementById("input1").value;
+      let result = document.getElementById("show").innerHTML = input1.replace('Rubbish', 'Shit');
+      console.log(result);
+  }
+
+
+</script>
